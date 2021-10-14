@@ -1,0 +1,19 @@
+.container { max-width: 1110px; margin: auto;}
+.menu a, li { text-decoration: none; list-style: none; }
+body { background: url('img/lime.jpg') center/cover no-repeat; height: 100vh;}
+.menu { display:table; background: linear-gradient( to bottom right,yellow, green); height: 70px; border-radius: 40px; box-shadow: 3px 3px 5px black;  }
+#lvl-1 { margin:0; }
+#lvl-1 .animation { display: inline-block; margin-left: 35px;  padding: 25px 30px 25px 30px; font: 1.6em Arial; line-height: 80%; text-transform: uppercase; transition: font-size 1s; position: relative; }
+#lvl-1 .animation:last-child { margin-right: 50px; }
+#lvl-1 li:hover .lvl-2 { visibility: visible; opacity: 1; background: rgba(0, 0, 0, .5);  box-shadow: 10px 10px 5px #cccc00;  width: 100%; }
+.lvl-2 li:hover .lvl-3 { visibility: visible; opacity: 1; background: rgba(0, 0, 0, .5);  box-shadow: 10px 10px 5px #cccc00;  width: 100%; }
+#lvl-1 :hover li { padding:20px; transition-duration: 2s; }
+#lvl-1 li:hover { background: rgba(230, 230, 230, .7); }
+#lvl-1 .animation a { color: yellow; text-shadow: 1px 1px 5px black; }
+.lvl-2 { visibility: hidden; right: 0px; opacity: 0;transition-timing-function: ease-in-out; transition: 0; top: 69px;  position: absolute;padding-left: 0; }
+.lvl-3 { visibility: hidden; left: 190px; opacity: 0; transition: width 3s; transition-timing-function: ease-in-out; top: 60px;  position: absolute;padding-left: 0; }
+.lvl-2>li { font-size: .7em!important; }
+.lvl-3>li { font-size: .7em!important; }
+.lvl-3 { width:0; }
+.lvl-2 a{ color: white!important; text-shadow: 1px 1px 5px black;}
+
